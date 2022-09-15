@@ -1,10 +1,17 @@
+Link app Heroku : https://tugas2-natasya.herokuapp.com/katalog
+
 Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html;
 
+Link bagan dapat dilihat pada : https://drive.google.com/file/d/1nnd_ms9ZUbyxIjI4ESyqEU7-r-VXiodN/view?usp=sharing
+
+User akan memberikan permintaan yang nantinya diterima oleh urls.py kemudian dilanjutkan views.py dan dilanjutkan dengan models yang membutuhkan database dan dibalikan ke views.py yang nantinya akan diperlihatkan user melalui template. 
+
 Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
+
 Virtual environment digunakan untuk tidak bertabrakan dengan versi lain yang terdapat di komputer, aplikasi web berbasis django dapat digunakan tanpa menggunakan virtual environment. Namun venv ini memiliki fungsi supaya terisolasi dan tidak tercampur package nya terorganisir.
 
-
 Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
+
 views.py
 Pada bagian views.py dilakukannya pengambilan semua data yang terdapat di database. Kemudian menambahkan variabel baru seperti nama mahasiswa, NPM, dan item. Serta terdapat juga item data yang dapat dimunculkan datanya pada halaman HTML.
 
