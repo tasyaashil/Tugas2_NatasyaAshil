@@ -19,5 +19,5 @@ for barang in item_data:
 
 # TODO: Create your views here.
 def index(request):
-    response = {'name' : nama_mhs, 'studentid' : studentid, 'item_data' : item }
+    response = {'nama_mhs' : nama_mhs, 'studentid' : studentid, 'item_data' : item }
     return render(request, 'katalog.html', response)
