@@ -5,7 +5,7 @@ import json
 nama_mhs = 'Natasya Ashil Zhafirah'
 studentid = '2106650090'
 
-f = open('C:\\PBP\\Tugas2\\Tugas2_NatasyaAshil\\katalog\\fixtures\\initial_catalog_data.json', 'r')
+f = open('katalog/fixtures/initial_catalog_data.json', 'r')
 item_data = json.loads(f.read())
 
 item = []
