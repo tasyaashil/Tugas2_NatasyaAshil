@@ -18,7 +18,7 @@ Karena dengan adanya data delivery dalam pengimplementasian sebuah platform akan
 5. Melakukan deploy ke Heroku.
 
 ## POSTMAN
-![XML](postman/xml.png)
-![JSON](postman/json.png)
-![HTML](postman/html.png)
+![XML](mywatchlist/postman/xml.png)
+![JSON](mywatchlist/postman/json.png)
+![HTML](mywatchlist/postman/html.png)
 
