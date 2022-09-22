@@ -1,15 +1,18 @@
 {% extends 'base.html' %}
 
+{% block meta %}
+<h1><center>🌈Tugas 3 Assignment PBP/PBD✨</center></h1>
+<style>
+    th {background-color: lightblue;}
+    table {margin: auto; top: 500px;}
+  </style>
+
+{% endblock meta %}
+
+
 {% block content %}
-<h1>Tugas 3 Assignment PBP/PBD</h1>
-
-<h5>Name: </h5>
-<p>{{nama}}</p>
-
-<h5>Student ID: </h5>
-<p>{{npm}}</p>
-
-<table>
+<h1><center>🎬My Watch List🎬</center></h1>
+<table><center>
     <tr>
     <th>Watched</th>
     <th>Title</th>
@@ -27,6 +30,6 @@
         <th>{{movie.review}}</th>
     </tr>
     {% endfor %}
+</center>    
 </table>
-
 {% endblock content %}
