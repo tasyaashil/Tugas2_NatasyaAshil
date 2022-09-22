@@ -1,6 +1,6 @@
-Link Heroku html : https://natasya-tugas3.herokuapp.com/mywatchlist/html/
-Link Heroku xml : https://natasya-tugas3.herokuapp.com/mywatchlist/xml/
-Link Heroku json : https://natasya-tugas3.herokuapp.com/mywatchlist/json/
+- Link Heroku html : https://natasya-tugas3.herokuapp.com/mywatchlist/html/
+- Link Heroku xml : https://natasya-tugas3.herokuapp.com/mywatchlist/xml/
+- Link Heroku json : https://natasya-tugas3.herokuapp.com/mywatchlist/json/
 
 ## Jelaskan perbedaan antara JSON, XML, dan HTML!
 - JSON (JavaScript Object Notation) merupakan file yang berekstensi .json digunakan untuk format data yang menggunakan objek JavaScript. Dalam elemennya json tidak rapi untuk dilihat dibandingkan xml.
