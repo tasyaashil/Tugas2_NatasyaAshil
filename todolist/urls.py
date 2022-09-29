@@ -8,5 +8,5 @@ urlpatterns = [
     path('register/', register, name='register'), #sesuaikan dengan nama fungsi yang dibuat
     path('login/', login_user, name='login'), #sesuaikan dengan nama fungsi yang dibuat
     path('logout/', logout_user, name='logout'), #sesuaikan dengan nama fungsi yang dibuat
-    path('add/', add_todolist, name='add_todolist'),
+    path('create-task/', add_todolist, name='add_todolist'),
 ]
