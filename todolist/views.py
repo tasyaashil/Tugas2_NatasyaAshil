@@ -34,7 +34,7 @@ def register(request) :
         if form.is_valid():
             form.save()
             messages.success(request, 'Sign Up Success!')
-            return redirect('todolist:login_user')
+            return redirect('todolist:login')
     
     context = {'form':form}
     return render(request, 'register.html', context)
@@ -56,7 +56,7 @@ def login_user(request) :
 
 def logout_user(request):
     logout(request)
-    response = HttpResponseRedirect(reverse('todolist:login_user'))
+    response = HttpResponseRedirect(reverse('todolist:login'))
     response.delete_cookie('last_login')
     return response
 

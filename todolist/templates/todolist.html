@@ -33,7 +33,6 @@
     
 </table>
 <h5>Last login session: {{last_login}}</h5>
-<button><a href="{% url 'todolist:add_todolist' %}">Create Task</a></button>
-<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
-
+<a href="{% url 'todolist:add_todolist' %}"><button class="btn btn-primary">Create a New Task</button></a>
+<a href="{% url 'todolist:logout' %}"><button class="btn btn-secondary">Logout</button></a>
 {% endblock content %}
