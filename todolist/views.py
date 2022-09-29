@@ -21,8 +21,8 @@ from todolist.forms import taskform
 def show_todolist(request) :
     datatodolist = Tasktodolist.objects.filter(user=request.user)
     context = {
-    'list_todolist' : datatodolist,
-    'last_login': request.COOKIES['last_login'],
+        'list_todolist' : datatodolist,
+        'last_login': request.COOKIES['last_login'],
     }
     return render(request, 'todolist.html', context)
 
@@ -33,8 +33,8 @@ def register(request) :
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Akun telah berhasil dibuat!')
-            return redirect('todolist:login')
+            messages.success(request, 'Sign Up Success!')
+            return redirect('todolist:login_user')
     
     context = {'form':form}
     return render(request, 'register.html', context)
@@ -50,13 +50,13 @@ def login_user(request) :
             response.set_cookie('last_login', str(datetime.datetime.now())) # membuat cookie last_login dan menambahkannya ke dalam response
             return response
         else:
-            messages.info(request, 'Username atau Password salah!')
+            messages.info(request, 'Wrong Username or Password!')
     context = {}
     return render(request, 'login.html', context)
 
 def logout_user(request):
     logout(request)
-    response = HttpResponseRedirect(reverse('todolist:login'))
+    response = HttpResponseRedirect(reverse('todolist:login_user'))
     response.delete_cookie('last_login')
     return response
 
