@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    body {
+        background: plum;
+    }
+    h1, h5, div {text-align: center;}
+    th {background-color: palevioletred; border: 2px solid;}
+    table {margin: auto; top: 500px;}
+    h1 {color: purple; background-color: lightblue;}
+</style>
+
+<h1>✏️To do list {{user}}📝</h1>
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr class="table-info">
+            <th>Date</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for i in list_todolist %}
+        <tr>
+            <th>{{i.date}}</th>
+            <th>{{i.title}}</th>
+            <th>{{i.description}}</th>
+        </tr>
+    {% endfor %}
+    
+</table>
+<h5>Last login session: {{last_login}}</h5>
+<button><a href="{% url 'todolist:add_todolist' %}">Create Task</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+{% endblock content %}
