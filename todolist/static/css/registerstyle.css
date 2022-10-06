@@ -13,7 +13,7 @@ body {
 
 .login{
     position: absolute;
-    width: 700px;
+    width: 450px;
     margin: auto;
     background-color: rgb(246, 233, 217);
     top: 50%;
@@ -37,13 +37,3 @@ input[type=submit]{
     color: rgb(246, 233, 217);
 }
 
-@media screen and (max-width:1200px){
-    .body{
-        width: 40%;
-    }   
-}
-@media screen and (max-width:600px){
-    .body{
-        width: 40%;
-    }   
-}
