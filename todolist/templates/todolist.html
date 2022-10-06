@@ -1,20 +1,31 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                Welcome back, {{user}}!
+            </div>
+            <div class="link">
+                <a href="{% url 'todolist:add_todolist' %}"><button class="btn btn-primary">Create a New Task</button></a>
+                <a href="{% url 'todolist:logout' %}"><button class="btn btn-secondary">Logout</button></a>
+            </div>
+        </div>
+    </nav>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/todoliststyle.css' %}">
 <style>
     body {
-        background: plum;
+        background: rgb(246, 233, 217);
     }
     h1, h5, div {text-align: center;}
     th {background-color: palevioletred; border: 2px solid;}
     table {margin: auto; top: 500px;}
-    h1 {color: purple; background-color: lightblue;}
+    h1 {color: rgb(85, 85, 205);}
 </style>
-
 <h1>✏️To do list {{user}}📝</h1>
 
-<table class="table table-hover">
+<!-- <table class="table table-hover">
     <thead class="thead-dark">
         <tr class="table-info">
             <th>Date</th>
@@ -31,8 +42,24 @@
         </tr>
     {% endfor %}
     
-</table>
+</table> -->
+
+<div class="row">
+{% for i in list_todolist %}
+<div class="col-3">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">{{i.date}}</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">{{i.title}}</h5>
+          <p class="card-text">{{i.description}}</p>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+</div>
+
 <h5>Last login session: {{last_login}}</h5>
-<a href="{% url 'todolist:add_todolist' %}"><button class="btn btn-primary">Create a New Task</button></a>
-<a href="{% url 'todolist:logout' %}"><button class="btn btn-secondary">Logout</button></a>
+<!-- <a href="{% url 'todolist:add_todolist' %}"><button class="btn btn-primary">Create a New Task</button></a>
+<a href="{% url 'todolist:logout' %}"><button class="btn btn-secondary">Logout</button></a> -->
 {% endblock content %}

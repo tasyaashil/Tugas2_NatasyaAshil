@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgb(85, 85, 205);
+    height: 70px;
+}
+
+.navbar{
+    display: none;
+    padding: 20px;
+}
+
+.navbar .logo{
+    color: rgb(246, 233, 217);
+    font-size: 25px;
+    font-weight: bold;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.btn{
+    background: rgb(246, 233, 217) !important;
+    color: rgb(85, 85, 205);
+    transform: rotateY(10px);
+    border-radius: 10px !important;
+    display: none;
+}
+
+
+@media screen and (max-width:600px){
+    body{
+        padding: 3em;
+    }
+    .col-3{
+        grid-gap: 3em;
+        
+    }
+}

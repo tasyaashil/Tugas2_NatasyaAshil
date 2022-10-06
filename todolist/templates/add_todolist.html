@@ -2,15 +2,17 @@
 
 {% block meta %}
 <title>Create a New Task</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/add_todoliststyle.css' %}">
 {% endblock meta %}
 
 {% block content %}  
 <style>
-    body {
-        background: plum;
-    }
+    /* body {
+        background: rgb(246, 233, 217);
+    } */
     h1, div{text-align: center;}
-    h1 {color: purple; background-color: lightblue;}
+    h1 {color: rgb(85, 85, 205);}
     table, button {margin: auto; top: 500px;}
 </style>
 <div class = "add_todolist">
@@ -25,7 +27,7 @@
                     {{ form.as_table }}  
                     <tr >  
                         <td></td>
-                        <td><input class="btn btn-primary" type="submit" name="submit" value="Save"/></td>  
+                        <td><input class="btn" type="submit" name="submit" value="Save"/></td>  
                     </tr>  
                 </table>  
             </div>

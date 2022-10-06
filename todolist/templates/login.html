@@ -2,19 +2,17 @@
 
 {% block meta %}
 <title>Login</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/loginstyle.css' %}">
 {% endblock meta %}
 
 {% block content %}
 <style>
-    body {
-        background: plum;
-    }
     table { margin: auto;}
     h1, div{text-align: center;}
-    h1 {color: purple; background-color: lightblue;}
+    h1 {color: darkblue;}
 </style>
 <div class = "login">
-
     <h1>🌼Login🌼</h1>
 
     <form method="POST" action="">
