@@ -1,3 +1,6 @@
+## Link Heroku
+https://natasya-tugas3.herokuapp.com/todolist/
+
 ## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
 1. Inline CSS: Inline merupakan metode yang digunakan menggunakan atribut `style` pada tag `HTML`.
 - Kelebihannya ialah mudah diimplementasikan jika hanya ingin merubah tag HTML tertentu.
