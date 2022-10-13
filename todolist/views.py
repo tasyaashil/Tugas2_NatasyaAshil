@@ -1,7 +1,11 @@
 import datetime
+import imp
 from multiprocessing import context
 
 from django.http import HttpResponseRedirect
+from django.http.response import HttpResponse, HttpResponseNotFound
+
+from django.core import serializers
 from django.urls import reverse
 
 from django.shortcuts import render
@@ -15,14 +19,15 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from todolist.forms import taskform
 
+import json
+
 # Create your views here.
 @login_required(login_url='/todolist/login/')
 
 def show_todolist(request) :
-    datatodolist = Tasktodolist.objects.filter(user=request.user)
     context = {
-        'list_todolist' : datatodolist,
         'last_login': request.COOKIES['last_login'],
+
     }
     return render(request, 'todolist.html', context)
 
@@ -72,3 +77,20 @@ def add_todolist(request):
     context = {'form': form}
     return render(request, 'add_todolist.html', context)
 
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    datatodolist = Tasktodolist.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', datatodolist))
+
+def add_todoajax(request):
+    if request.method == "POST":
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        add_todo = Tasktodolist(
+            user = request.user,
+            title = title,
+            description = description,
+        )
+        add_todo.save()
+        return HttpResponse(b"CREATED", status=201)
+    return HttpResponseNotFound()

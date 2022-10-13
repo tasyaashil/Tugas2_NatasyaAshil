@@ -38,3 +38,16 @@ nav{
     transform: rotateY(10px);
     border-radius: 10px !important;
 }
+
+form .button{
+    background: rgb(246, 233, 217) !important;
+    color: rgb(85, 85, 205);
+    transform: rotateY(10px);
+    border-radius: 10px !important;
+}
+
+form .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
