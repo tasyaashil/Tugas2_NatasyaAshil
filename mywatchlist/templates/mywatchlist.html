@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<h1><center>🌈Tugas 3 Assignment PBP/PBD✨</center></h1>
+<style>
+    th {background-color: lightblue;}
+    table {margin: auto; top: 500px;}
+  </style>
+
+{% endblock meta %}
+
+
+{% block content %}
+<h1><center>🎬My Watch List🎬</center></h1>
+<table><center>
+    <tr>
+    <th>Watched</th>
+    <th>Title</th>
+    <th>Rating</th>
+    <th>Release Date</th>
+    <th>Review</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for movie in list_movie %}
+    <tr>
+        <th>{{movie.watched}}</th>
+        <th>{{movie.title}}</th>
+        <th>{{movie.rating}}</th>
+        <th>{{movie.release_date}}</th>
+        <th>{{movie.review}}</th>
+    </tr>
+    {% endfor %}
+</center>    
+</table>
+{% endblock content %}

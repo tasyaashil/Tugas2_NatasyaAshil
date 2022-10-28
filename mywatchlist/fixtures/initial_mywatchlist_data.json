@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":1,
+        "fields":{
+            "watched":"Yes",
+            "title":"Purple Hearts",
+            "rating": "6,7/10",
+            "release_date": "29 Juli 2022",
+            "review" : "Cerita cinta klasik yang sedih namun juga romantis."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":2,
+        "fields":{
+            "watched":"Yes",
+            "title":"Mencuri Raden Saleh",
+            "rating": "8,7/10",
+            "release_date": "25 Agustus 2022",
+            "review" : "Strategi pencurian yang dilakukan sangat seru dan menantang."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":3,
+        "fields":{
+            "watched":"Yes",
+            "title":"Inside Out",
+            "rating": "9/10",
+            "release_date": "19 Agustus 2015",
+            "review" : "Mengajarkan untuk menerima segala bentuk emosi"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":4,
+        "fields":{
+            "watched":"Yes",
+            "title":"Now You See Me",
+            "rating": "8,3/10",
+            "release_date": "31 Mei 2013",
+            "review" : "Strategi dalam pencurian dengan trik-trik sulap yang tidak terduga."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":5,
+        "fields":{
+            "watched":"Yes",
+            "title":"Ocean's Eight",
+            "rating": "8,4/10",
+            "release_date": "8 Juni 2018",
+            "review" : "Trik yang dilakukan sekumpulan wanita untuk mencuri sangat cerdik."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":6,
+        "fields":{
+            "watched":"Yes",
+            "title":"Toy Story 4",
+            "rating": "9/10",
+            "release_date": "11 Juni 2019",
+            "review" : "Ceritanya sedih karena perpisahan Woody dan Buzz Lightyear."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":7,
+        "fields":{
+            "watched":"Yes",
+            "title":"Coco",
+            "rating": "8,5/10",
+            "release_date": "22 November 2017",
+            "review" : "Ceritanya sedih karena perpisahan ayah dengan keluarganya."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":8,
+        "fields":{
+            "watched":"Yes",
+            "title":"Pitch Perfect 3",
+            "rating": "8,2/10",
+            "release_date": "27 Desember 2017",
+            "review" : "Cerita yang sangat menarik dan menyenangkan dari kisah Barden Bellas."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":9,
+        "fields":{
+            "watched":"Yes",
+            "title":"Big Hero 6",
+            "rating": "8,5/10",
+            "release_date": "7 November 2014",
+            "review" : "Cerita yang sangat menarik dengan keenam pahlawan dalam melawan kejahatan."
+        }
+    },
+    {
+        "model":"mywatchlist.watchlistmovie",
+        "pk":10,
+        "fields":{
+            "watched":"Yes",
+            "title":"Zootopia",
+            "rating": "8/10",
+            "release_date": "17 Februari 2016",
+            "review" : "Cerita yang menceritakan kehidupan hewan yang sangat menarik dan lucu."
+        }
+    }
+]
